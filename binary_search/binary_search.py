@@ -8,16 +8,13 @@ class Solution:
         
         while low <= high:
             mid = low + (high - low) // 2
-            
+           
             if arr[mid] == K:
-                return 1
-                
+                return 1     
             if arr[mid] > K:
-                high = mid - 1
-                
+                high = mid - 1      
             else:
-                low = mid + 1
-                
+                low = mid + 1               
         
         return -1
 
